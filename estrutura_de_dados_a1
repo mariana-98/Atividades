@@ -1,7 +1,8 @@
 // Implemente um programa para  cadastro de alunos de uma disciplina util izando a linguagemJava, 
 // seguindo os seguintes critérios://parte 1:// Criar uma estrutura heterogênea (array) do tipo string para cadastrar  o nome de 25 alunos; 
 // Garantir que a estrutura seja totalmente preenchida. 
-// Após  implementar o  programa e  preencher o  array com o  nome dos  alunos, cadastre  mais  5novos alunos.  // Qual a dificuldade de inserir os novos alunos nessa estrutura de dados? // Justifique a sua resposta direcionando aos conceitos de gerenciamento de memória.  package atividade1;public class Atividade1 {    public static void main(String[] args) {         //parte 1:                  //   Criar   uma   estrutura   heterogênea   (array)   do   tipo   string   para   cadastrar   o  no me  de   25alunos         //array do tipo string com 25 posiçoes        String[] alunos = new String[25];                 //parte 2:        // Garantir que a estrutura seja totalmente preenchida. 
+// Após  implementar o  programa e  preencher o  array com o  nome dos  alunos, cadastre  mais  5novos alunos.  
+// Qual a dificuldade de inserir os novos alunos nessa estrutura de dados? // Justifique a sua resposta direcionando aos conceitos de gerenciamento de memória.  
 
 
 // Resolução:
@@ -27,6 +28,41 @@ console.nextLine; //impede que pegue o espaço
 
 }
 
+-------------
+// Resolução:
+
+public class Atividade1 {    
+public static void main(String[] args) {  
+
+//   Criar   uma   estrutura   heterogênea   (array)   do   tipo   string   para   cadastrar   o  no me  de   25alunos         
+//array do tipo string com 25 posiçoes        
+
+String[] alunos = new String[25]; 
+
+// Garantir que a estrutura seja totalmente preenchida. 
+//laço de repetiçao para adicionar 25 alunos.    
+
+int i;         
+for (i=0; i<25; i++)  {        
+
+// adiciona os nomes dos alunos no array    
+
+alunos [i]="aluno "+i;         
+
+// imprime na tela os alunos adicionados  
+
+System.out.println("adicionado " + alunos[i]);
+}
+
+//  Após   implementar  o   programa   e   preencher   o  arra y  com   o   nome   dos  a lunos,  cadastremais 5 novos alunos. 
+
+    /* alunos [25]="aluno25";          
+    alunos [26]="aluno26";        
+    alunos [27]="aluno27";        
+    alunos [28]="aluno28";        
+    alunos [29]="aluno29"; */    
+    } 
+      }
 
 // Para atender à demanda de 25 cadastros, cria-se uma estrutura de repetição, que, por sua vez, é limitada, sendo que o array loca uma quantidade fixa de memória e
 // ao tentar acrescentar um número excedente ao espaço definido para o array, criamos uma situação de overflow e esses últimos não podem ser cadastrados
