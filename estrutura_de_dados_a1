@@ -1,0 +1,32 @@
+// Implemente um programa para  cadastro de alunos de uma disciplina util izando a linguagemJava, 
+// seguindo os seguintes critérios://parte 1:// Criar uma estrutura heterogênea (array) do tipo string para cadastrar  o nome de 25 alunos; 
+// Garantir que a estrutura seja totalmente preenchida. 
+// Após  implementar o  programa e  preencher o  array com o  nome dos  alunos, cadastre  mais  5novos alunos.  // Qual a dificuldade de inserir os novos alunos nessa estrutura de dados? // Justifique a sua resposta direcionando aos conceitos de gerenciamento de memória.  package atividade1;public class Atividade1 {    public static void main(String[] args) {         //parte 1:                  //   Criar   uma   estrutura   heterogênea   (array)   do   tipo   string   para   cadastrar   o  no me  de   25alunos         //array do tipo string com 25 posiçoes        String[] alunos = new String[25];                 //parte 2:        // Garantir que a estrutura seja totalmente preenchida. 
+
+
+// Resolução:
+
+
+public static void main (String [] args){
+
+Scanner console = new Scanner (System.in);
+
+String [] v = new String [25];
+
+int i;
+
+for (i =0; i < 25+5; i++){
+
+System.out.println (" digite o nome do aluno: ");
+
+v [ i] = console.nextLine ( );
+
+console.nextLine; //impede que pegue o espaço
+
+}
+
+}
+
+
+// Para atender à demanda de 25 cadastros, cria-se uma estrutura de repetição, que, por sua vez, é limitada, sendo que o array loca uma quantidade fixa de memória e
+// ao tentar acrescentar um número excedente ao espaço definido para o array, criamos uma situação de overflow e esses últimos não podem ser cadastrados
